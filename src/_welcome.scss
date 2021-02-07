@@ -21,7 +21,7 @@
 
     &-title {
         line-height: 1.2;
-        font-family: "Oswald";
+        font-family: "Oswald", sans-serif;
         font-size: 32px;
         text-align: center;
     }
@@ -223,7 +223,7 @@
             margin-bottom: 25px;
             position: relative;
             display: inline-block;
-            font-family: "Open Sans";
+            font-family: "Open , sans-serifSans";
 
             &:first-letter {
                 font-size: 24px;
@@ -281,7 +281,7 @@
         
         &-title {
             margin-bottom: 25px;
-            font-family: "Open Sans";
+            font-family: "Open , sans-serifSans";
             display: inline-block;
             position: relative;
 
@@ -342,7 +342,7 @@
                 margin-bottom: 20px;
                 margin-top: 10px;
                 font-size: 20px;
-                font-family: "Open Sans";
+                font-family: "Open , sans-serifSans";
 
                 &:first-letter {
                     font-size: 25px;
@@ -369,14 +369,14 @@
 
         h3 {
             margin-bottom: 25px;
-            font-family: "Oswald";
+            font-family: "Oswald", sans-serif;
         }
     }
 
     &-btn {
         padding: 6px 23px;
         font-size: 18px;
-        font-family: "Oswald";
+        font-family: "Oswald", sans-serif;
         color: $light;
         margin-top: 40px;
         border: 0;
