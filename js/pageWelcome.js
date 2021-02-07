@@ -11,6 +11,7 @@ let position = 0;
 let movePosition = 0;
 
 
+// Подгрузка изображений
 const options = {
     root: null,
     rootMargin: '0px',
@@ -37,6 +38,7 @@ imagesPopDistributions.forEach(img => {
 });
 
 
+// Слайдер-карусель
 sliderBtnLeft.addEventListener("click", function() {
     position--;
     movePosition += 105.5;
@@ -70,6 +72,7 @@ function checkBtns() {
         sliderBtnLeft.classList.toggle("hide");
     };
 };
+
 
 // измеряем размеры экрана чтобы обратно вернуть прежнее состояние "itemsHistory"
 window.addEventListener("resize", function(){
