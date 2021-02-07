@@ -10,8 +10,8 @@ menuBtn.addEventListener("click", function() {
     menuBtn.classList.toggle("active-btn");
 });
 
-// Итерируем, так как кнопки регистрации и войти содержат один и тот же класс но в разных
-// элементах
+// Итерируем, так как кнопки регистрации и войти содержат один и тот
+// элементах же класс но в разных
 btnRegistration.forEach(btnRegistration => {
     btnRegistration.addEventListener("click", function() {
         console.log("Hello 1");
