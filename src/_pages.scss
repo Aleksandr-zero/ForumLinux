@@ -1,0 +1,51 @@
+
+.home-btn {
+    position: fixed;
+    bottom: 35px;
+    left: 35px;
+
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+
+    width: 35px;
+    height: 35px;
+    border: 2px solid $light-green-main;
+    border-radius: 50%;
+
+    img {
+        position: absolute;
+        left: 4.5px;
+        bottom: 7px;
+        height: 22px;
+        width: 22px;
+    }
+
+    @media (max-width: 700px) {
+        display: none;
+    }
+}
+
+// HEADER
+
+.header {
+
+    &__container-page {
+        margin-left: 8%;
+        margin-top: 10px;
+
+        &-logo-text {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__logo {
+        width: 46px;
+    }
+
+    &__text {
+        margin-left: 18px;
+        font-family: "Oswald";
+    }
+}

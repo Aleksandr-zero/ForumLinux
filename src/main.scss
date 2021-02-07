@@ -1,0 +1,346 @@
+@import "_fonts.scss";
+
+
+$light: #fff;
+$dark: #04070b;
+$light-dark: #0c1013;
+
+$light-green-main: #a6eb3f;
+$light-green-auxiliary: #baf069;
+
+$light-burgundy: #940f0f;
+$dark-burgundy: #261008;
+$light-blue: #4d71b8;
+$dark-blue: #202341;
+$light-green: #52cc74;
+$dark-green: #2e4d31;
+$light-gray: #606e78;
+$dark-gray: #181b1f;
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 4px;
+    background-color: $dark;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba($light-green-auxiliary, 0.9);
+    border-radius: 8px;
+}
+
+body {
+    margin: 0;
+    font-family: "Titillium Web", sans-serif;
+    background: $light-dark;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: 0.5px solid $light-green-main;
+    width: 70%;
+    margin: 15px auto;
+}
+
+
+// MAIN ELEMENTS
+
+.quote {
+    margin: 0 auto;
+    font-size: 22px;
+    margin-top: 5px;
+    font-family: "Open Sans";
+    position: relative;
+    display: table;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: -25%;
+        left: -25px;
+        width: 30px;
+        height: 20px;
+        border-top: 2px solid $light-green-main;
+        border-left: 2px solid $light-green-main;
+        }
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -25%;
+        right: -25px;
+        width: 30px;
+        height: 20px;
+        border-bottom: 2px solid $light-green-main;
+        border-right: 2px solid $light-green-main;
+    }
+
+    @media (max-width: 350px) {
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.main-link {
+    position: relative;
+    transition: all 0.2s;
+
+    &:before {
+        content: "";
+        width: 0;
+        height: 2.5px;
+        position: absolute;
+        bottom: -3px;
+        left: 50%;
+        background: linear-gradient(to right, $light-green-main, $light-green-auxiliary);
+        transition: all 0.3s;
+    }
+
+    &:hover {
+        &:before {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+.description-link {
+    color: $light-green-main;
+}
+
+.subtopic-title {
+    margin-bottom: 60px;
+    margin-left: 10px;
+    font-family: "Oswald";
+    font-weight: 400;
+    display:inline-block;;
+
+    &:first-letter {
+        font-size: 35px;
+    }
+
+    @media (max-width: 425px) {
+        margin-bottom: 40px;
+    }
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+
+    @media (max-width: 940px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 425px) {
+        max-width: 85%;
+    }
+}
+
+.slider__btn {
+    margin: 8px;
+    cursor: pointer;
+
+    &.hide {
+        pointer-events: none;
+        opacity: 0.4;
+    }
+
+    &__left {
+        img {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.sidebar {
+    height: 100vh;
+    width: 30%;
+    right: -30%;
+    position: fixed;
+    transition: all 0.45s;
+    background-color: $dark;
+    overflow: scroll;
+
+    .registration-entrance {
+        margin-top: 30px;
+
+        img {
+            width: 24px;
+        }
+    }
+
+    &.active {
+        right: 0;
+    }
+
+    &__items {
+        margin: 12px auto auto;
+        max-width: 55%;
+    }
+
+    &__item {
+        list-style: none;
+        margin: 12px 0;
+        display: flex;
+
+        &-img {
+            width: 28px;
+            margin-right: 15px;
+        }
+
+        &-link {
+            color: $light;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-top: 25%;
+        font-size: 22px;
+        font-family: "Oswald";
+    }
+
+    @media (min-width: 701px) {
+        width: 30%;
+        right: -30%;
+
+        &.active {
+            right: -30%;
+        }
+    }
+
+    @media (max-width: 700px) {
+        width: 38%;
+        right: -38%;
+    }
+
+    @media (max-width: 500px) {
+        width: 53%;
+        right: -53%;
+    }
+
+    @media (max-width: 350px) {
+        width: 70%;
+        right: -70%;
+    }
+}
+
+
+// HEADER
+
+@import "_header.scss";
+
+
+// WELCOME (первая страница, которую увидит пользователь)
+
+@import "_welcome.scss";
+
+
+// Главная страница
+// TABS-SECTION
+
+.tabs-section {
+    padding-top: 120px;
+
+    &__items {
+        max-width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+
+        &-img {
+            width: 20px;
+            margin-right: 3px;
+        }
+
+        &-link {
+            color: $light;
+        }
+    }
+}
+
+
+// MAIN-CONTENT
+
+.main-content {
+    margin-top: 100px;
+
+    &__items {
+        max-width: 60%;
+    }
+
+    &__item {
+        margin-bottom: 55px;
+        padding: 3%;
+
+        &-title {
+            margin-bottom: 14px;
+        }
+
+        &-link {
+            color: $light;
+            transition: color 0.1s;
+
+            &:hover {
+                color: $light-green-auxiliary;
+            }
+        }
+
+        &-btn {
+            margin-top: 16px;
+            display: flex;
+            justify-content: flex-end;
+
+            &-link {
+                color: $light;
+                padding: 6px 16px;
+                border: 2px solid $light;
+                border-radius: 2px;
+                transition: color 0.1s, background 0.1s, border 0.1s;
+
+                &:hover {
+                    background-color: $light-green-auxiliary;
+                    border: 2px solid $light-green-auxiliary;
+                    color: $dark;
+                }
+            }
+        }
+    }
+}
+
+
+// FOOTER
+
+@import "_footer.scss";
+
+
+// PAGES
+
+@import "_pages.scss";

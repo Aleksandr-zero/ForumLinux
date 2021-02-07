@@ -1,0 +1,57 @@
+.footer {
+    height: 100px;
+    margin-top: 50px;
+    background: linear-gradient(to top, $dark, $light-dark);
+
+    &__title {
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 10px;
+        font-family: "Oswald";
+    }
+
+    &__items-socialnet {
+        display: flex;
+        justify-content: space-between;
+        max-width: 115px;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    &__item-socialnet {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+
+            border: 2px solid $light;
+            border-radius: 2.5px;
+
+            transition: border 0.2s, background-color 0.2s;
+
+            &:hover {
+                border: 2px solid $light-green-auxiliary;
+                background-color: $light-green-auxiliary;
+
+                .footer__item-socialnet-img {
+                    fill: $dark;
+                }
+            }
+        }
+
+        &-img {
+            fill: $light;
+            height: 18px;
+            transition: fill 0.2s;
+        }
+
+    }
+}
