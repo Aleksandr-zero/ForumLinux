@@ -6,9 +6,9 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="img/iconsDistributions/linux.svg" type="image/png">
-    <link rel="preload" href="css/main.css" as="style">
-    <link rel="preload" href="js/scriptWelcome.js" as="script">
-    <link rel="preload" href="fonts/TitilliumWeb-Regular.woff" crossorigin="anonymous" as="font">
+    <!-- <link rel="preload" href="css/main.css" as="style">
+    <link rel="preload" href="js/pageWelcome.js" as="script">
+    <link rel="preload" href="fonts/TitilliumWeb-Regular.woff" crossorigin="anonymous" as="font"> -->
 
     <title>Forum Linux - Welcome</title>
 </head>
@@ -66,15 +66,15 @@
                 <div class="header__other">
                     <lu class="header__other__items">
                         <li class="header__other__item">
-                            <a href="#" class="header__other__item-link main-link">
+                            <a role="button" class="header__other__item-link main-link">
                                 <img src="img/other/user-add.svg" alt="user-add" class="header__other__item-img">
-                                Register
+                                Registration
                             </a>
                         </li>
                         <li class="header__other__item">
-                            <a href="#" class="header__other__item-link main-link">
+                            <a role="button" class="header__other__item-link main-link">
                                 <img src="img/other/user-come.svg" alt="user-come" class="header__other__item-img">
-                                To come in
+                                Sign in
                             </a>
                         </li>
                     </lu>
@@ -299,7 +299,7 @@
             <div class="pop-distributions__content">
                 <div class="pop-distributions__content__items">
                     <div class="pop-distributions__content-item">
-                        <img src="img/popularDistributions/arch.jpg" alt="arch" class="pop-distributions__content-item-img">
+                        <img src="img/popularDistributions/arch.jpg" data="img/popularDistributions/arch.jpg" alt="arch" class="pop-distributions__content-item-img">
                         <div class="pop-distributions__content-item-text">
                             <h4 class="pop-distributions__content-item-title">
                                 <a href="https://en.wikipedia.org/wiki/Arch_Linux" target="blank" class="pop-distributions__content-item-link main-link">Arch</a>
@@ -326,10 +326,10 @@
                                 </p>
                             </div>
                         </div>
-                        <img src="img/popularDistributions/debian.jpg" alt="debian" class="pop-distributions__content-item-img">
+                        <img src="" data="img/popularDistributions/debian.jpg" alt="debian" class="pop-distributions__content-item-img">
                     </div>
                     <div class="pop-distributions__content-item">
-                        <img src="img/popularDistributions/kali.jpg" alt="kali" class="pop-distributions__content-item-img">
+                        <img src="" data="img/popularDistributions/kali.jpg" alt="kali" class="pop-distributions__content-item-img">
                         <div class="pop-distributions__content-item-text">
                             <h4 class="pop-distributions__content-item-title">
                                 <a href="https://en.wikipedia.org/wiki/Kali_Linux" target="blank" class="pop-distributions__content-item-link main-link">Kali</a>
@@ -356,10 +356,10 @@
                                 </p>
                             </div>
                         </div>
-                        <img src="img/popularDistributions/manjaro.jpg" alt="manjaro" class="pop-distributions__content-item-img">
+                        <img src="" data="img/popularDistributions/manjaro.jpg" alt="manjaro" class="pop-distributions__content-item-img">
                     </div>
                     <div class="pop-distributions__content-item">
-                        <img src="img/popularDistributions/mint.jpg" alt="mint" class="pop-distributions__content-item-img">
+                        <img src="" data="img/popularDistributions/mint.jpg" alt="mint" class="pop-distributions__content-item-img">
                         <div class="pop-distributions__content-item-text">
                             <h4 class="pop-distributions__content-item-title">
                                 <a href="https://en.wikipedia.org/wiki/Linux_Mint" target="blank" class="pop-distributions__content-item-link main-link">Mint</a>
@@ -385,7 +385,7 @@
                                 </p>
                             </div>
                         </div>
-                        <img src="img/popularDistributions/ubuntu.jpg" alt="ubuntu" class="pop-distributions__content-item-img">
+                        <img src="" data="img/popularDistributions/ubuntu.jpg" alt="ubuntu" class="pop-distributions__content-item-img">
                     </div>
                 </div>
             </div>
@@ -425,7 +425,9 @@
         </div>
     </footer>
 
-    <script src="js/scriptWelcome.js"></script>
+    <script src="js/pageWelcome.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 
