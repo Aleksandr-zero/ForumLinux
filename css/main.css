@@ -90,7 +90,7 @@ hr {
   margin: 0 auto;
   font-size: 22px;
   margin-top: 5px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   position: relative;
   display: table;
 }
@@ -154,7 +154,7 @@ hr {
 .subtopic-title {
   margin-bottom: 60px;
   margin-left: 10px;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   display: inline-block;
 }
