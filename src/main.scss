@@ -183,10 +183,6 @@ hr {
 
     .registration-entrance {
         margin-top: 30px;
-
-        img {
-            width: 24px;
-        }
     }
 
     &.active {
@@ -210,6 +206,8 @@ hr {
 
         &-link {
             color: $light;
+            display: flex;
+            align-items: center;
         }
 
         &:last-child {
