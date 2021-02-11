@@ -994,6 +994,45 @@ hr {
   }
 }
 
+.about-us {
+  margin-top: 70px;
+}
+
+.about-us__content-item {
+  margin-bottom: 25px;
+}
+
+.about-us__content-item-text {
+  max-width: 80%;
+  margin: 10px auto 0;
+}
+
+.about-us__content-item-title {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+.about-us__content-item-title:after {
+  content: "";
+  position: absolute;
+  background: #a6eb3f;
+  height: 25px;
+  width: 23px;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+  top: 8%;
+  left: -0.3%;
+  z-index: -1;
+}
+
+.about-us__content-item-title:first-letter {
+  font-size: 22px;
+}
+
+.about-us__content-item:last-child {
+  margin-bottom: 0;
+}
+
 .tabs-section {
   padding-top: 120px;
 }
