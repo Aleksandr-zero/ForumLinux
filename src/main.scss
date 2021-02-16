@@ -1,4 +1,4 @@
-@import "_fonts.scss";
+@import "_fonts";
 
 
 $light: #fff;
@@ -40,6 +40,10 @@ body {
     font-family: "Titillium Web", sans-serif;
     background: $light-dark;
     color: #fff;
+
+    &.lock {
+        overflow: hidden;
+    }
 }
 
 h1, h2, h3, h4, h5, h6, p, li, ul {
@@ -183,10 +187,18 @@ hr {
 
     .registration-entrance {
         margin-top: 30px;
+
+        img {
+            width: 24px;
+        }
     }
 
     &.active {
         right: 0;
+
+        body {
+            background-color: rgba($color: #000000, $alpha: 0.8);
+        }
     }
 
     &__items {
@@ -250,17 +262,17 @@ hr {
 
 // HEADER
 
-@import "_header.scss";
+@import "_header";
 
 
 // WINDOWS REGISTRATION ANS SIGN AN
 
-@import "_windowRegistr.scss";
+@import "_windowRegistr";
 
 
 // WELCOME (первая страница, которую увидит пользователь)
 
-@import "_welcome.scss";
+@import "_welcome";
 
 
 // Главная страница
@@ -404,9 +416,4 @@ hr {
 
 // FOOTER
 
-@import "_footer.scss";
-
-
-// PAGES
-
-@import "_pages.scss";
+@import "_footer";

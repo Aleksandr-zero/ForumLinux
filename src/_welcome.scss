@@ -142,6 +142,7 @@
             text-align: center;
             transition: all 0.2s;
             border-radius: 8px;
+            width: 33.333%;
 
             &:nth-child(2) {
                 margin: 0 20px;
@@ -407,6 +408,50 @@
                 &:nth-child(odd) {
                     order: 1;
                 }
+            }
+        }
+    }
+}
+
+
+// ABOUT-US
+
+.about-us {
+    margin-top: 70px;
+
+    &__content {
+
+        &-item {
+            margin-bottom: 25px;
+
+            &-text {
+                max-width: 80%;
+                margin: 10px auto 0;
+            }
+
+            &-title {
+                font-family: "Open Sans", sans-serif;
+                position: relative;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    background: $light-green-main;
+                    height: 25px;
+                    width: 23px;
+                    transform: skewX(-20deg);
+                    top: 8%;
+                    left: -0.3%;
+                    z-index:-1
+                }
+
+                &:first-letter {
+                    font-size: 22px;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
             }
         }
     }

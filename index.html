@@ -6,9 +6,9 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="img/iconsDistributions/linux.svg" type="image/png">
-    <!-- <link rel="preload" href="css/main.css" as="style">
+    <link rel="preload" href="css/main.css" as="style">
     <link rel="preload" href="js/pageWelcome.js" as="script">
-    <link rel="preload" href="fonts/TitilliumWeb-Regular.woff" crossorigin="anonymous" as="font"> -->
+    <link rel="preload" href="fonts/TitilliumWeb-Regular.woff" crossorigin="anonymous" as="font">
 
     <title>Forum Linux - Welcome</title>
 </head>
@@ -43,7 +43,7 @@
     
     </svg>
 
-    <div class="header-wrapper">
+    <div class="header-wrapper lock-padding">
         <header class="header">
             <div class="header__container">
                 <h2 class="header__title">Linux</h2>
@@ -68,7 +68,7 @@
                         <li class="header__other__item">
                             <a role="button" class="header__other__item-link link-registration main-link">
                                 <img src="img/other/user-add.svg" alt="user-add" class="header__other__item-img">
-                                Log in
+                                Sign up
                             </a>
                         </li>
                         <li class="header__other__item">
@@ -84,7 +84,7 @@
                 </button>
             </div>
         </header>
-        <div class="sidebar">
+        <div class="sidebar lock-padding">
             <ul class="sidebar__items">
                 <li class="sidebar__item">
                     <img src="img/iconsDistributions/linux.svg" alt="linux" class="sidebar__item-img">
@@ -104,13 +104,13 @@
                 <ul class="sidebar__items">
                     <li class="sidebar__item">
                         <img src="img/other/user-add.svg" alt="user-add" class="sidebar__item-img">
-                        <a href="#" class="sidebar__item-link link-registration main-link">
-                            Log in
+                        <a role="button" class="sidebar__item-link link-registration main-link">
+                            Sign up
                         </a>
                     </li>
                     <li class="sidebar__item">
                         <img src="img/other/user-come.svg" alt="user-come" class="sidebar__item-img">
-                        <a href="#" class="sidebar__item-link link-sign-in link-sign-in main-link">
+                        <a role="button" class="sidebar__item-link link-sign-in link-sign-in main-link">
                             Sign in
                         </a>
                     </li>
@@ -120,6 +120,34 @@
                 <h2 class="sidebar__title">
                     Linux is cool !
                 </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="window-registration">
+        <div class="window-registration__body">
+            <div class="window-registration__content">
+                <div class="window-registration-back-close">
+                    <button type="button" class="window-registration-close-btn">close</button>
+                </div>
+                <h3 class="window-registration__title">Login</h3>
+                <form class="window-registration__forms" action="index.html">
+                    <div class="window-registration__forms-fullname">
+                        <input type="text" class="forms-fullname" placeholder="Full name">
+                    </div>
+                    <div class="window-registration__forms-email">
+                        <input type="email" class="forms-email" placeholder="Email">
+                    </div>
+                    <div class="window-registration__forms-password">
+                        <input type="password" class="forms-password" placeholder="Password">
+                    </div>
+                    <div class="window-registration__forms-email">
+                        <input type="password" class="forms-password" placeholder="Confirm password">
+                    </div>
+                    <div class="window-registration__forms-back-btn">
+                        <button class="window-registration__forms-btn" type="submit">Login</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -394,6 +422,35 @@
             <div class="pop-distributions-back-btn">
                 <h3>Well, what are you interested? Then welcome to the forum !</h3>
                 <a href="main.html" class="pop-distributions-btn">Go to forum</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-us">
+        <div class="container">
+            <h2 class="about-us-title subtopic-title">Now who we are?</h2>
+            <div class="about-us__content">
+                <div class="about-us__content__items">
+                    <div class="about-us__content-item">
+                        <h3 class="about-us__content-item-title">Why did we create this project?</h3>
+                        <div class="about-us__content-item-text">
+                            <p>
+                                The project was created in 2021 in order to share knowledge, namely, to write articles
+                                about operating systems based on the Linux kernel!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-us__content-item">
+                        <h3 class="about-us__content-item-title">How to become an author?</h3>
+                        <div class="about-us__content-item-text">
+                            <p>
+                                Anyone can start writing articles without any experience. Interesting articles will
+                                be promoted and irrelevant ones will remain <s>trapped</s> without interest. Everyone
+                                can discuss this topic, ask a question that interests him.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

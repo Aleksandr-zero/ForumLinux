@@ -18,7 +18,7 @@ const options = {
     threshold: 0.1
 };
 
-function handleImg(myImg, observer) {
+function handleImg(myImg) {
     myImg.forEach(myImgSingle => {
 
         if (myImgSingle.intersectionRatio > 0) {
@@ -41,6 +41,8 @@ imagesPopDistributions.forEach(img => {
 // Слайдер-карусель
 sliderBtnLeft.addEventListener("click", function() {
     position--;
+
+    // делаем 105.5%, так как у среднего блока есть margin(left/right) по 20px
     movePosition += 105.5;
     
     blockItemsHistory.style.transform = `translateX(${movePosition}%)`;
