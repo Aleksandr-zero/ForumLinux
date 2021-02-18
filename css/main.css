@@ -574,7 +574,151 @@ hr {
   }
 }
 
-.window-registration {
+.window-registration-sign__body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 10px;
+}
+
+.window-registration-sign__forms {
+  color: #000;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.window-registration-sign__forms input {
+  position: relative;
+  font-size: 14px;
+  width: 90%;
+  text-align: center;
+  outline: none;
+  padding: 10px 30px;
+  border: 0;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+
+.window-registration-sign__content {
+  position: relative;
+  min-width: 55%;
+  background-color: #101417;
+  color: #fff;
+  -webkit-transition: 0.6s all;
+  transition: 0.6s all;
+  opacity: 0;
+  -webkit-transform: translate(0px, -100%);
+          transform: translate(0px, -100%);
+  border-radius: 5px;
+}
+
+.window-registration-sign__title {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 35px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.window-registration-sign-back-close {
+  top: 6px;
+  right: 10px;
+  position: absolute;
+}
+
+.window-close-btn {
+  font-size: 0;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  padding: 11px;
+}
+
+.window-close-btn:after, .window-close-btn:before {
+  content: "";
+  height: 100%;
+  background-color: #a6eb3f;
+  border-radius: 4px;
+  width: 22px;
+  height: 3.5px;
+  position: absolute;
+  right: 0;
+}
+
+.window-close-btn:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.window-close-btn:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.window-registration-sign__already {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.window-registration-sign__already-link {
+  cursor: pointer;
+  color: #a6eb3f;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.window-registration-sign__already-link:hover {
+  color: #fff;
+}
+
+.window-forms-back-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.window-forms-btn {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right bottom, from(#97e81f), to(#c5f280));
+  background: linear-gradient(to right bottom, #97e81f, #c5f280);
+  width: 70%;
+  height: 40px;
+  border: 0;
+  border-radius: 25px;
+}
+
+.window-registration-sign {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -590,156 +734,19 @@ hr {
   transition: 0.6s all;
 }
 
-.window-registration.registration-open {
+.window-registration-sign.window-open {
   opacity: 1;
   visibility: visible;
 }
 
-.window-registration.registration-open .window-registration__content {
+.window-registration-sign.window-open .window-registration-sign__content {
   opacity: 1;
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
 }
 
-.window-registration__body {
-  min-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 30px 10px;
-}
-
-.window-registration__content {
-  position: relative;
-  min-width: 55%;
-  background-color: #101417;
-  color: #fff;
-  -webkit-transition: 0.6s all;
-  transition: 0.6s all;
-  opacity: 0;
-  -webkit-transform: translate(0px, -100%);
-          transform: translate(0px, -100%);
-  border-radius: 5px;
-}
-
-.window-registration__title {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 35px;
-  font-family: "Open Sans", sans-serif;
-}
-
-.window-registration__forms {
-  color: #000;
-  margin: 0 auto;
-  padding: 30px;
-  text-align: center;
-}
-
-.window-registration__forms-back-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.window-registration__forms-btn {
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 20px;
-  cursor: pointer;
-  background: -webkit-gradient(linear, left top, right top, from(#97e81f), to(#c5f280));
-  background: linear-gradient(to right, #97e81f, #c5f280);
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
-  width: 70%;
-  height: 40px;
-  border: 0;
-  border-radius: 25px;
-}
-
-.window-registration__forms-btn:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#89d616), to(#c9f389));
-  background: linear-gradient(to right, #89d616, #c9f389);
-}
-
-.window-registration__forms input {
-  position: relative;
-  outline: none;
-  padding: 10px 30px;
-  border: 0;
-  margin-bottom: 20px;
-  border-radius: 25px;
-}
-
-.window-registration__forms input:before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #7f7f7f;
-}
-
-.window-registration-back-close {
-  top: 6px;
-  right: 10px;
-  position: absolute;
-}
-
-.window-registration-close-btn {
-  font-size: 0;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: none;
-  cursor: pointer;
-  padding: 11px;
-}
-
-.window-registration-close-btn:after, .window-registration-close-btn:before {
-  content: "";
-  height: 100%;
-  background-color: #a6eb3f;
-  border-radius: 4px;
-  width: 22px;
-  height: 3.5px;
-  position: absolute;
-  right: 0;
-}
-
-.window-registration-close-btn:after {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.window-registration-close-btn:before {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
 @media (min-width: 734px) and (max-width: 100vw) {
-  .window-registration__content {
+  .window-registration-sign__content {
     min-width: 35%;
   }
 }

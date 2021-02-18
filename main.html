@@ -38,7 +38,7 @@
     
     </svg>
 
-    <div class="header-wrapper">
+    <div class="header-wrapper lock-padding">
         <header class="header">
             <div class="header__container">
                 <h2 class="header__title">Linux</h2>
@@ -46,15 +46,15 @@
             <div class="header__other">
                 <lu class="header__other__items">
                     <li class="header__other__item">
-                        <a href="#" class="header__other__item-link link-registration main-link">
+                        <a role="button" class="header__other__item-link link-registration main-link">
                             <img src="img/other/user-add.svg" alt="user-add" class="header__other__item-img">
-                            Log in
+                            Sign up
                         </a>
                     </li>
                     <li class="header__other__item">
-                        <a href="#" class="header__other__item-link link-sign-in main-link">
+                        <a role="button" class="header__other__item-link link-sign-in main-link">
                             <img src="img/other/user-come.svg" alt="user-come" class="header__other__item-img">
-                            To come in
+                            Sign in
                         </a>
                     </li>
                 </lu>
@@ -63,6 +63,40 @@
                 <span class="header__burger-btn-item">Menu</span>
             </button>
         </header>
+
+        <div class="window-registration">
+            <div class="window-registration__body">
+                <div class="window-registration__content">
+                    <div class="window-registration-back-close">
+                        <button type="button" class="window-registration-close-btn">close</button>
+                    </div>
+                    <h3 class="window-registration__title">Login</h3>
+                    <form class="window-registration__forms" action="index.html">
+                        <div class="window-registration__forms-fullname">
+                            <input type="text" class="forms-fullname" placeholder="Full name">
+                        </div>
+                        <div class="window-registration__forms-email">
+                            <input type="email" class="forms-email" placeholder="Email">
+                        </div>
+                        <div class="window-registration__forms-password">
+                            <input type="password" class="forms-password" placeholder="Password">
+                        </div>
+                        <div class="window-registration__forms-email">
+                            <input type="password" class="forms-password" placeholder="Confirm password">
+                        </div>
+                        <div class="window-registration__forms-back-btn">
+                            <button class="window-registration__forms-btn" type="submit">Login</button>
+                        </div>
+                    </form>
+                    <div class="window-registration__already">
+                        <p>
+                            Already registered? <br> <a role="button" class="window-registration__already-link link-sign-in main-link">Sign in!</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
         <div class="sidebar">
             <ul class="sidebar__items">
                 <li class="sidebar__item">
@@ -84,7 +118,7 @@
                     <li class="sidebar__item">
                         <img src="img/other/user-add.svg" alt="user-add" class="sidebar__item-img">
                         <a href="#" class="sidebar__item-link link-registration main-link">
-                            Log in
+                            Sign up
                         </a>
                     </li>
                     <li class="sidebar__item">

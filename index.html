@@ -110,7 +110,7 @@
                     </li>
                     <li class="sidebar__item">
                         <img src="img/other/user-come.svg" alt="user-come" class="sidebar__item-img">
-                        <a role="button" class="sidebar__item-link link-sign-in link-sign-in main-link">
+                        <a role="button" class="sidebar__item-link link-sign-in main-link">
                             Sign in
                         </a>
                     </li>
@@ -124,14 +124,14 @@
         </div>
     </div>
 
-    <div class="window-registration">
-        <div class="window-registration__body">
-            <div class="window-registration__content">
-                <div class="window-registration-back-close">
-                    <button type="button" class="window-registration-close-btn">close</button>
+    <div class="window-registration window-registration-sign">
+        <div class="window-registration-sign__body">
+            <div class="window-registration-sign__content">
+                <div class="window-registration-sign-back-close">
+                    <button type="button" class="window-registration-close-btn window-close-btn">close</button>
                 </div>
-                <h3 class="window-registration__title">Login</h3>
-                <form class="window-registration__forms" action="index.html">
+                <h3 class="window-registration-sign__title">Login</h3>
+                <form class="window-registration__forms window-registration-sign__forms" action="index.html">
                     <div class="window-registration__forms-fullname">
                         <input type="text" class="forms-fullname" placeholder="Full name">
                     </div>
@@ -144,10 +144,42 @@
                     <div class="window-registration__forms-email">
                         <input type="password" class="forms-password" placeholder="Confirm password">
                     </div>
-                    <div class="window-registration__forms-back-btn">
-                        <button class="window-registration__forms-btn" type="submit">Login</button>
+                    <div class="window-registration__forms-back-btn window-forms-back-btn">
+                        <button class="window-registration__forms-btn window-forms-btn" type="submit">Login</button>
                     </div>
                 </form>
+                <div class="window-registration-sign__already">
+                    <p>
+                        Already registered? <br> <a role="button" class="window-registration-sign__already-link link-sign-in">Sign in!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="window-sign window-registration-sign">
+        <div class="window-registration-sign__body">
+            <div class="window-registration-sign__content">
+                <div class="window-registration-sign-back-close">
+                    <button type="button" class="window-sign-close-btn window-close-btn">close</button>
+                </div>
+                <h3 class="window-registration-sign__title">Sign in</h3>
+                <form class="window-sign__forms window-registration-sign__forms" action="index.html">
+                    <div class="window-sign__forms-email">
+                        <input type="email" class="forms-email" placeholder="Email">
+                    </div>
+                    <div class="window-sign__forms-password">
+                        <input type="password" class="forms-password" placeholder="Password">
+                    </div>
+                    <div class="window-sign__forms-back-btn window-forms-back-btn">
+                        <button class="window-sign__forms-btn window-forms-btn" type="submit">Sign in</button>
+                    </div>
+                </form>
+                <div class="window-registration-sign__already">
+                    <p>
+                        Don't have an account yet? <br> <a role="button" class="window-registration-sign__already-link link-registration">Register now!</a>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -365,10 +397,9 @@
                             </h4>
                             <div class="pop-distributions__content-item-description">
                                 <p>
-                                    Kali Linux is the most popular OS for penetration testing and penetration testing. It uses
-                                    the Debian distribution as a basis. Kali Linux comes with about 100 preinstalled tools for various
-                                    operations. In addition, Kali has one of the largest repositories where you can find tools
-                                    for any task.
+                                    Kali Linux is the most popular OS for penetration testing. It uses the Debian distribution
+                                    as a basis. Kali Linux comes with about 100 preinstalled tools for various operations.
+                                    In addition, Kali has one of the largest repositories where you can find tools for any task.
                                 </p>
                             </div>
                         </div>
@@ -419,9 +450,34 @@
                     </div>
                 </div>
             </div>
-            <div class="pop-distributions-back-btn">
-                <h3>Well, what are you interested? Then welcome to the forum !</h3>
-                <a href="main.html" class="pop-distributions-btn">Go to forum</a>
+        </div>
+    </div>
+
+    <div class="about-us">
+        <div class="container">
+            <h2 class="about-us-title subtopic-title">Now who we are?</h2>
+            <div class="about-us__content">
+                <div class="about-us__content__items">
+                    <div class="about-us__content-item">
+                        <h3 class="about-us__content-item-title">Why did we create this project?</h3>
+                        <div class="about-us__content-item-text">
+                            <p>
+                                The project was created in 2021 in order to share knowledge, namely, to write articles
+                                about operating systems based on the Linux kernel!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-us__content-item">
+                        <h3 class="about-us__content-item-title">How to become an author?</h3>
+                        <div class="about-us__content-item-text">
+                            <p>
+                                Anyone can start writing articles without any experience. Interesting articles will
+                                be promoted and irrelevant ones will remain <s>trapped</s> without interest. Everyone
+                                can discuss this topic, ask a question that interests him.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -453,6 +509,9 @@
                 </div>
             </div>
         </div>
+    <div class="pop-distributions-back-btn">
+        <h3>Well, what are you interested? Then welcome to the forum !</h3>
+        <a href="main.html" class="pop-distributions-btn">Go to forum</a>
     </div>
 
     <footer class="footer">
