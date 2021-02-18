@@ -80,6 +80,10 @@ h1, h2, h3, h4, h5, h6, p, li, ul {
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -409,8 +413,9 @@ hr {
 
 .header__other__item-link {
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   cursor: pointer;
+  font-family: "Open Sans", sans-serif;
 }
 
 .header__title {
@@ -756,7 +761,7 @@ hr {
 
 @media (min-width: 734px) and (max-width: 100vw) {
   .window-registration-sign__content {
-    min-width: 35%;
+    min-width: 32%;
   }
 }
 
@@ -951,6 +956,7 @@ hr {
 
 .history__content-item-title {
   margin: 10px 0;
+  font-size: 18px;
 }
 
 .history__content-item:hover {
@@ -1022,7 +1028,6 @@ hr {
   margin-bottom: 25px;
   position: relative;
   display: inline-block;
-  font-family: "Open Sans", sans-serif;
 }
 
 .advantages__item-title:first-letter {
@@ -1079,7 +1084,6 @@ hr {
 
 .disadvantages__item-title {
   margin-bottom: 25px;
-  font-family: "Open Sans", sans-serif;
   display: inline-block;
   position: relative;
 }
@@ -1140,7 +1144,6 @@ hr {
   margin-bottom: 20px;
   margin-top: 10px;
   font-size: 20px;
-  font-family: "Open Sans", sans-serif;
 }
 
 .pop-distributions__content-item-title:first-letter {
@@ -1222,7 +1225,6 @@ hr {
 }
 
 .about-us__content-item-title {
-  font-family: "Open Sans", sans-serif;
   position: relative;
 }
 
@@ -1397,7 +1399,9 @@ hr {
 
 .main-content__item-btn-link {
   color: #fff;
-  padding: 6px 16px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  padding: 6px 14px;
   border: 2px solid #fff;
   border-radius: 2px;
   -webkit-transition: color 0.1s, background 0.1s, border 0.1s;
