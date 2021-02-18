@@ -17,8 +17,7 @@ const windowSign = document.querySelector(".window-sign");
 let timeout = 600;
 
 // задаём счётчик для того, чтобы отсчитывать если мы будем открывать окно регистрации/войти
-// когда уже будет открыто окно регистрации/войти, чтобы не было тряски контента при вызове
-// функции "clearRightPadding"
+// когда уже будет открыто окно регистрации/войти, чтобы не было тряски контента при блокировке scroll
 let score = 1;
 
 
@@ -34,11 +33,15 @@ window.addEventListener("resize", check_WindowResize_for_HeaderOther);
 
 // Итерируем, так как кнопки регистрации и войти на странице не одни
 btnsRegistration.forEach(btnRegistration => {
-    btnRegistration.addEventListener("click", function() { opensWindow_Registration_Sign(pointerWindow = windowRegistration) });
+    btnRegistration.addEventListener("click", function() {
+        opensWindow_Registration_Sign(pointerWindow = windowRegistration)
+    });
 });
 
 btnsSign.forEach(btnSign => {
-    btnSign.addEventListener("click", function() { opensWindow_Registration_Sign(pointerWindow = windowSign) });
+    btnSign.addEventListener("click", function() {
+        opensWindow_Registration_Sign(pointerWindow = windowSign)
+    });
 });
 
 
@@ -55,12 +58,14 @@ function opensWindow_Registration_Sign(pointerWindow) {
         if (windowSign.classList.contains("window-open")) {
             windowSign.classList.toggle("window-open");
             score++;
+            cleansFieldsInput(window = windowRegistration);
         };
     } 
     else if (pointerWindow == windowSign) {
         if (windowRegistration.classList.contains("window-open")) {
             windowRegistration.classList.toggle("window-open");
             score++;
+            cleansFieldsInput(window = windowSign);
         };
     };
 
@@ -78,11 +83,7 @@ function closesWindow_Registration_Sign(window) {
     };
 
     setTimeout(function() { clearRightPadding(rightPaddingCount = 0) }, timeout);
-    setTimeout( () => {
-        window.querySelectorAll("input").forEach(fieldInput => {
-            fieldInput.value = "";
-        });
-    }, timeout);
+    setTimeout( () => { cleansFieldsInput(window = window) }, timeout);
 };
 
 
@@ -107,4 +108,11 @@ function clearRightPadding(rightPaddingCount) {
 
     body.style.paddingRight = rightPaddingCount + "px";
     body.classList.toggle("lock");
+};
+
+
+function cleansFieldsInput(window) {
+    window.querySelectorAll("input").forEach(fieldInput => {
+        fieldInput.value = "";
+    });
 };

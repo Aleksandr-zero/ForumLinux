@@ -181,7 +181,7 @@ hr {
     width: 30%;
     right: -30%;
     position: fixed;
-    transition: all 0.45s;
+    transition: right 0.45s;
     background-color: $dark;
     overflow: scroll;
 
@@ -220,6 +220,7 @@ hr {
             color: $light;
             display: flex;
             align-items: center;
+            cursor: pointer;
         }
 
         &:last-child {

@@ -21,6 +21,7 @@ $back-window-reqistration-sign: #101417;
         font-size: 14px;
         width: 90%;
         text-align: center;
+        transition: background-color 0.3s;
 
         outline: none;
         padding: 10px 30px;
@@ -28,6 +29,10 @@ $back-window-reqistration-sign: #101417;
 
         margin-bottom: 20px;
         border-radius: 25px;
+
+        &:focus {
+            background-color: darken($light, 15%);
+        }
     }
 }
 
@@ -90,6 +95,9 @@ $back-window-reqistration-sign: #101417;
     display: flex;
     text-align: center;
     justify-content: center;
+
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
 
     margin-bottom: 20px;
 
@@ -157,5 +165,17 @@ $back-window-reqistration-sign: #101417;
         &__content {
             min-width: 35%;
         }
+    }
+}
+
+.password-forgot {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+
+    &-link {
+        color: $light-green-main;
+        font-size: 12px;
+        font-family: "Open Sans", sans-serif;
     }
 }

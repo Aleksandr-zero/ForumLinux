@@ -212,8 +212,8 @@ hr {
   width: 30%;
   right: -30%;
   position: fixed;
-  -webkit-transition: all 0.45s;
-  transition: all 0.45s;
+  -webkit-transition: right 0.45s;
+  transition: right 0.45s;
   background-color: #04070b;
   overflow: scroll;
 }
@@ -260,6 +260,7 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .sidebar__item:last-child {
@@ -600,11 +601,17 @@ hr {
   font-size: 14px;
   width: 90%;
   text-align: center;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
   outline: none;
   padding: 10px 30px;
   border: 0;
   margin-bottom: 20px;
   border-radius: 25px;
+}
+
+.window-registration-sign__forms input:focus {
+  background-color: #d9d9d9;
 }
 
 .window-registration-sign__content {
@@ -672,6 +679,8 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -749,6 +758,22 @@ hr {
   .window-registration-sign__content {
     min-width: 35%;
   }
+}
+
+.password-forgot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.password-forgot-link {
+  color: #a6eb3f;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .main__intro {
